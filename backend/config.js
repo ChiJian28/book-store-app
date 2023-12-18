@@ -1,7 +1,7 @@
 // file to store sensitive/secret information
 
 
-export const PORT = 3333;
+export const PORT = import.meta.env.VITE_PORT;
 
 // make sure you type the correct password in the URL
-export const mongoDBURL = 'mongodb+srv://root:root@books-store-mern.anvuosp.mongodb.net/?retryWrites=true&w=majority';
+export const mongoDBURL = import.meta.env.mongoDBURL;
